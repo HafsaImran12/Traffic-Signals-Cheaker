@@ -1,18 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Changer</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Traffic Lights Color</h1>
-    <div id="changeColor">
-        <button class="btnRed btns">Red</button>
-        <button class="btnYellow btns">Yellow</button>
-        <button class="btnGreen btns">Green</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traffic Signal Cheaker</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./bootstrap.css" />
+  </head>
+  <body>
+    <h1 class="card-title text-light">🚦 Traffic Signal Cheaker</h1>
+    <div
+      class="card d-flex flex-column align-items-center bg-dark pt-2"
+      style="width: 18rem"
+    >
+      <div class="signal my-2">
+        <div id="redColor" class="color"></div>
+        <div id="yellowColor" class="color"></div>
+        <div id="greenColor" class="color"></div>
+      </div>
+       <div class="result text-light"></div>
+      <div class="card-body text-center p-0 py-3">
+        <button id="red" class="btn btn-danger">Red</button>
+        <button id="yellow" class="btn btn-warning">Yellow</button>
+        <button id="green" class="btn btn-success">Green</button>
+      </div>
+     
     </div>
     <script src="./app.js"></script>
-</body>
+    <script src="./bootstrap.js"></script>
+  </body>
 </html>
